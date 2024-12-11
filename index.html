@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>佳瑩辦公家具</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+        <div class="overlay">
+            <h1>佳瑩辦公家具</h1>
+            <p>我們正在努力更新網站，敬請期待！</p>
+            <button id="notify-btn">通知我</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <h2>歡迎來到佳瑩辦公家具</h2>
+        <p>我們專注於提供高品質、時尚且實用的辦公家具，讓您的工作空間更高效與舒適。</p>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products-section">
+        <h2>商品展示</h2>
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="product1.jpg" alt="高級辦公桌">
+                <h3>高級辦公桌</h3>
+                <p>價格：$199</p>
+            </div>
+            <div class="product-item">
+                <img src="product2.jpg" alt="舒適辦公椅">
+                <h3>舒適辦公椅</h3>
+                <p>價格：$99</p>
+            </div>
+            <div class="product-item">
+                <img src="product3.jpg" alt="多功能書架">
+                <h3>多功能書架</h3>
+                <p>價格：$149</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2>聯絡我們</h2>
+        <div class="contact-info">
+            <div>
+                <h3>聯絡資訊</h3>
+                <p>地址：台北市某某街123號</p>
+                <p>電話：02-1234-5678</p>
+                <p>Email：info@jia-ying.com</p>
+            </div>
+            <div>
+                <h3>營業時間</h3>
+                <p>週一至週五：9:00 - 18:00</p>
+                <p>週六：9:00 - 12:00</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 佳瑩辦公家具. 保留所有權利。</p>
+    </footer>
+
+    <script>
+        $(document).ready(function() {
+            // Notify button interaction
+            $('#notify-btn').click(function() {
+                alert('感謝您的關注，我們會在網站上線時通知您！');
+            });
+
+            // Smooth scrolling
+            $('a[href^="#"]').on('click', function(event) {
+                event.preventDefault();
+                $('html, body').animate({
+                    scrollTop: $($.attr(this, 'href')).offset().top
+                }, 500);
+            });
+        });
+    </script>
+</body>
+</html>
